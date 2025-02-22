@@ -4,10 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mindset</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        .urls {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px 0;
+            width: 100%;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .urls:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+        }
+        .btn {
+            padding: 10px 25px;
+            background-color: #fff;
+            color: #2575fc;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background-color: #2575fc;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>This is the Mindset extension</h1>
-    <p id="para">Loading...</p>
+    <h1>✨ Welcome to Mindset Extension ✨</h1>
+    <p id="para">Loading your personalized experience...</p>
+    <p class="urls">instagram.com</p>
+    <p class="urls">facebook.com</p>
+    <p class="urls">twitter.com</p>
+    <!-- <p class="urls">youtube.com</p> -->
+
+    <!-- <a href="https://www.w3schools.com/" target="_blank" class="btn">Learn Something New 🚀</a> -->
     <script src="script.js"></script>
 </body>
 </html>
