@@ -1,0 +1,29 @@
+{
+    "name": "Mindset",
+    "version": "0.0.4",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "tabs"
+    ],
+    "host_permissions": [
+        "*://www.youtube.com/*"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["redirect.html"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "icons": {
+        "128": "icon128.png"
+    }
+}
